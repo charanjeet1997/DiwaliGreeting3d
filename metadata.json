@@ -1,0 +1,5 @@
+{
+  "name": "Happy Diwali 3D Greeting",
+  "description": "A festive 3D web application to celebrate Diwali, featuring glowing text and particle effects using Three.js and React.",
+  "requestFramePermissions": []
+}
