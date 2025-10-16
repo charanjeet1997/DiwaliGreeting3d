@@ -175,7 +175,7 @@ const DiwaliScene: React.FC = () => {
                 const textGeometry = new TextGeometry('Happy Diwali', {
                     font: font,
                     size: 15,
-                    depth: 4, // thinner text
+                    depth: 3.8, // thinner text
                     curveSegments: 12,
                     bevelEnabled: true,
                     bevelThickness: 0.02,
