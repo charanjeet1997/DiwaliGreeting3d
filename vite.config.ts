@@ -10,12 +10,8 @@ export default defineConfig(({ mode }) => {
         host: '0.0.0.0',
       },
       publicDir: 'public',
-      base: './DiwaliGreeting3d/',
+      base: '/DiwaliGreeting3d/',
       plugins: [react()],
-      define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
-      },
       resolve: {
         alias: {
           '@': path.resolve(__dirname, './src'),

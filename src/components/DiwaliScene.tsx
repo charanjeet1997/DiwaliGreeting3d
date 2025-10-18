@@ -195,7 +195,7 @@ const DiwaliScene: React.FC = () => {
                     clearcoatRoughness: 0.1,
                 });
 
-                const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+                textMesh = new THREE.Mesh(textGeometry, textMaterial);
                 textMesh.position.set(0, 20, 0);
                 textMesh.castShadow = true;
                 scene.add(textMesh);
@@ -231,8 +231,8 @@ const DiwaliScene: React.FC = () => {
         const animate = () => {
             animationFrameId = requestAnimationFrame(animate);
             const elapsedTime = clock.getElapsedTime();
-
             if (textMesh) {
+                console.log("Animating frame at time:", elapsedTime);
                 textMesh.position.y = 20 + Math.sin(elapsedTime * 0.5) * 2;
                 textMesh.lookAt(new THREE.Vector3(camera.position.x, textMesh.position.y, camera.position.z));
             }
